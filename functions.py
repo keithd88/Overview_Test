@@ -79,7 +79,6 @@ def hex2bgr(hex_color: str) -> Tuple[int, int, int]:
     rgb = tuple(int(hex_color[i : i + 2], 16) for i in (0, 2, 4))
     return (rgb[2], rgb[1], rgb[0])
 
-
 def bgr2hex(bgr_color: Tuple[int, int, int]) -> str:
     b, g, r = [hex(x).lstrip('0x').rjust(2, '0').upper() for x in bgr_color]
     return f"#{''.join([r,g,b])}"
