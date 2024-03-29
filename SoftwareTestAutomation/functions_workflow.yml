@@ -1,4 +1,4 @@
-name: Overview Testing
+name: Overview Function Testing
 
 on:
   push:
